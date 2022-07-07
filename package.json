@@ -1,7 +1,8 @@
 {
   "name": "modern-icons-library",
   "version": "1.0.0",
-  "description": "",
+  "description": "Libarary for SVGs files",
+  "private": false,
   "main": "index.js",
   "module": "dist/index.esm.js",
   "files": [
