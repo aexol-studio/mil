@@ -1,18 +1,22 @@
-You can add any svg file to the assets folder then simply run “npm run svgr” and this will transform your new svg file to a react component ( .js file ).
+You can add any svg file to the assets folder then simply run “npm run svgr” and this will transform your new svg file to a react component ( .js file ), finally run "npm run build".
 
-$ npm pack ../icons                 // Point it to the folder where the package is located.
-$ npm install icons-1.0.0.tgz       // Point it to the generated file.
+In your react project run the following command:
+- npm pack ../icons &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Point it to the folder where the package is located.
+- npm install icons-1.0.0.tgz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Point it to the generated file.
 
 Then in your component you have to import Icons from the dependency created in your package.json file after you run the second 
 command ( npm install icons-1.0.0.tgz ).
 
-Example:
+# Example:
+```html
 
 Import { Heart } from ‘@icons’;
 export default function ( ) {
 return(
-<div>
-<Heart/>
-</div>
-);
+      <div>
+          <Heart/>
+      </div>
+  );
 }
+
+```
