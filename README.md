@@ -1,4 +1,4 @@
-You can add any svg file to the assets folder then simply run “npm run svgr” and this will transform your new svg file to a react component ( .js file ), finally run "npm run build".
+You can add any svg file to the assets folder then simply run “npm run svgr” to transform your new svg file to a react component ( .js file ).Finally run "npm run build".
 
 In your react project run the following command:
 - npm pack ../icons &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Point it to the folder where the package is located.
