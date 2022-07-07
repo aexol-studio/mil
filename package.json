@@ -11,7 +11,7 @@
   "scripts": {
     "prebuild": "rimraf src && rimraf dist",
     "build": "npm run svgr && rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\"",
     "svgr": "svgr --icon --title-prop -d src assets"
   },
   "author": "oussama horrigue",
