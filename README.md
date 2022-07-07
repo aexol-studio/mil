@@ -10,7 +10,7 @@ command ( npm install icons-1.0.0.tgz ).
 # Example:
 ```html
 
-Import { AppBinDeleteSvgrepoCom } from ‘@icons’;
+import { AppBinDeleteSvgrepoCom } from ‘@icons’;
 export default function ( ) {
 return(
       <div>
