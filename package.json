@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\"",
     "svgr": "svgr --icon --title-prop -d src assets",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o docs-build"
   },
   "author": "oussama horrigue",
   "license": "ISC",
