@@ -24,7 +24,14 @@ import { AppBinDeleteSvgrepoCom } from 'modern-icons-library';
 
 class Question extends React.Component {
     render() {
-        return <div> Delete <AppBinDeleteSvgrepoCom />? </div>
+        return (
+            <div> Delete 
+                <AppBinDeleteSvgrepoCom 
+                    title="Bin"
+                    style = {{ fontSize: '10rem', color: '#0000' }}
+                /> 
+            </div>
+            )
     }
 }
 ```
@@ -38,7 +45,7 @@ example usage
 import { SvgCameraHipsterOnTrendSvgrepoCom } from 'modern-icons-library';
 class Question extends React.Component {
   render() {
-    return <div> Take a picture <SvgCameraHipsterOnTrendSvgrepoCom />? </div>
+    return <div>To take a picture <SvgCameraHipsterOnTrendSvgrepoCom title = 'Camera' style = {{ fontSize: '10rem' }}/> </div>
   }
 }
 ```
