@@ -24,7 +24,7 @@ import { AppBinDeleteSvgrepoCom } from 'modern-icons-library';
 
 class Question extends React.Component {
     render() {
-        return <div> Lets go for a <AppBinDeleteSvgrepoCom />? </div>
+        return <div> Delete <AppBinDeleteSvgrepoCom />? </div>
     }
 }
 ```
@@ -38,7 +38,7 @@ example usage
 import { SvgCameraHipsterOnTrendSvgrepoCom } from 'modern-icons-library';
 class Question extends React.Component {
   render() {
-    return <div> Lets go for a <SvgCameraHipsterOnTrendSvgrepoCom />? </div>
+    return <div> Take a picture <SvgCameraHipsterOnTrendSvgrepoCom />? </div>
   }
 }
 ```
