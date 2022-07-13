@@ -24,7 +24,7 @@ import { AppBinDeleteSvgrepoCom } from 'modern-icons-library';
 
 class Question extends React.Component {
     render() {
-        return <div> Lets go for a <FaBeer />? </div>
+        return <div> Lets go for a <AppBinDeleteSvgrepoCom />? </div>
     }
 }
 ```
