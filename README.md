@@ -1,22 +1,45 @@
-You can add any svg file to the assets folder then simply run “npm run svgr” to transform your new svg file to a react component ( .js file ).Finally run "npm run build".
+<img src="https://avatars.githubusercontent.com/u/54020604?s=200&v=4" width="120" alt="modern-icons-library" >
 
-In your react project run the following command:
-- npm pack ../icons &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Point it to the folder where the package is located.
-- npm install icons-1.0.0.tgz &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Install the generated file.
+# [modern-icons-library](https://github.com/aexol-studio/mil)
 
-Then in your component you have to import Icons from the dependency created in your package.json file after you run the second 
-command ( npm install icons-1.0.0.tgz ).
+[![npm][npm-image]][npm-url]
 
-# Example:
-```html
+[npm-image]: https://img.shields.io/npm/v/modern-icons-library.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/modern-icons-library
 
-import { AppBinDeleteSvgrepoCom } from ‘@icons’;
-export default function ( ) {
-return(
-      <div>
-          <AppBinDeleteSvgrepoCom/>
-      </div>
-  );
-}
+Include modern icons in your React projects easily with `modern-icons-library`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
+## Installation (for standard modern project)
+
+```bash
+yarn add modern-icons-library
+# or
+npm install modern-icons-library --save
 ```
+
+example usage
+
+```jsx
+import { AppBinDeleteSvgrepoCom } from 'modern-icons-library';
+
+class Question extends React.Component {
+    render() {
+        return <div> Lets go for a <FaBeer />? </div>
+    }
+}
+```
+
+*NOTE*: each Icon has it's own component under `modern-icons-library` you import from.
+
+
+example usage
+
+```jsx
+import { SvgCameraHipsterOnTrendSvgrepoCom } from 'modern-icons-library';
+class Question extends React.Component {
+  render() {
+    return <div> Lets go for a <SvgCameraHipsterOnTrendSvgrepoCom />? </div>
+  }
+}
+```
+
