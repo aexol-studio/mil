@@ -45,7 +45,14 @@ example usage
 import { SvgCameraHipsterOnTrendSvgrepoCom } from 'modern-icons-library';
 class Question extends React.Component {
   render() {
-    return <div>To take a picture <SvgCameraHipsterOnTrendSvgrepoCom title = 'Camera' style = {{ fontSize: '10rem' }}/> </div>
+    return (
+            <div>
+                To take a picture 
+                <SvgCameraHipsterOnTrendSvgrepoCom 
+                title = 'Camera' 
+                style = {{ fontSize: '10rem' }}/> 
+            </div>
+            )
   }
 }
 ```
