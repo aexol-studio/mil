@@ -1,0 +1,24 @@
+{
+  "name": "lunchpro-main",
+  "version": "0.0.0",
+  "description": "LunchPro monorepo",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build -ws --if-present",
+    "test": "npm run test -ws --if-present",
+    "web": "npm run dev -w apps/web",
+    "storybook": "npm run storybook -w apps/mil",
+    "svgr": "npm run svgr -w apps/mil"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aexol-studio/mil"
+  },
+  "workspaces": [
+    "./apps/mil",
+    "./apps/web"
+  ],
+  "author": "Oussama Horrigue",
+  "license": "MIT",
+  "homepage": "https://github.com/aexol-studio/mil"
+}
