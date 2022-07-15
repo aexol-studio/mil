@@ -1,77 +1,59 @@
-# Turborepo starter with npm
+<img src="https://avatars.githubusercontent.com/u/54020604?s=200&v=4" width="120" alt="modern-icons-library" >
 
-This is an official starter turborepo.
+# [modern-icons-library](https://github.com/aexol-studio/mil)
 
-## What's inside?
+[![npm][npm-image]][npm-url]
 
-This turborepo uses [npm](https://www.npmjs.com/) as a package manager. It includes the following packages/apps:
+[npm-image]: https://img.shields.io/npm/v/modern-icons-library.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/modern-icons-library
 
-### Apps and Packages
+Include modern icons in your React projects easily with `modern-icons-library`, which utilizes ES6 imports that allows you to include only the icons that your project is using.
 
-- `docs`: a [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+## Installation (for standard modern project)
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-## Setup
-
-This repository is used in the `npx create-turbo@latest` command, and selected when choosing which package manager you wish to use with your monorepo (npm).
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-npm run build
+```bash
+yarn add modern-icons-library
+# or
+npm install modern-icons-library --save
 ```
 
-### Develop
+example usage
 
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-npm run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
+```jsx
+import { AppBinDeleteSvgrepoCom } from 'modern-icons-library'
+class Question extends React.Component {
+  render() {
+    return (
+      <div>
+        {' '}
+        Delete
+        <AppBinDeleteSvgrepoCom
+          title="Bin"
+          style={{ fontSize: '10rem', color: '#0000' }}
+        />
+      </div>
+    )
+  }
+}
 ```
 
-## Useful Links
+_NOTE_: each Icon has it's own component under `modern-icons-library` you import from.
 
-Learn more about the power of Turborepo:
+example usage
 
-- [Pipelines](https://turborepo.org/docs/core-concepts/pipelines)
-- [Caching](https://turborepo.org/docs/core-concepts/caching)
-- [Remote Caching](https://turborepo.org/docs/core-concepts/remote-caching)
-- [Scoped Tasks](https://turborepo.org/docs/core-concepts/scopes)
-- [Configuration Options](https://turborepo.org/docs/reference/configuration)
-- [CLI Usage](https://turborepo.org/docs/reference/command-line-reference)
+```jsx
+import { SvgCameraHipsterOnTrendSvgrepoCom } from 'modern-icons-library'
+class Question extends React.Component {
+  render() {
+    return (
+      <div>
+        To take a picture
+        <SvgCameraHipsterOnTrendSvgrepoCom
+          title="Camera"
+          style={{ fontSize: '10rem' }}
+        />
+      </div>
+    )
+  }
+}
+```
