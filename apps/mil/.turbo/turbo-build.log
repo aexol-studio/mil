@@ -1,0 +1,54 @@
+[34mmodern-icons-library:build[0m: cache hit, replaying output [2m5bdeced2cd4aeb09[0m
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0m> modern-icons-library@1.0.8 prebuild
+[34mmodern-icons-library:build: [0m> rimraf src && rimraf dist
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0m> modern-icons-library@1.0.8 build
+[34mmodern-icons-library:build: [0m> npm run svgr && rollup -c && next build
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0m> modern-icons-library@1.0.8 svgr
+[34mmodern-icons-library:build: [0m> svgr --icon --title-prop -d src assets
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0massets/approve-hand-like-svgrepo-com.svg -> src/ApproveHandLikeSvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/app-bin-delete-svgrepo-com.svg -> src/AppBinDeleteSvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/camera-hipster-on-trend-svgrepo-com.svg -> src/CameraHipsterOnTrendSvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/cloud-computing-data-2-svgrepo-com.svg -> src/CloudComputingData2SvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/audio-media-multimedia-38-svgrepo-com.svg -> src/AudioMediaMultimedia38SvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/headphones-hipster-music-svgrepo-com.svg -> src/HeadphonesHipsterMusicSvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/magnifier-out-plus-svgrepo-com.svg -> src/MagnifierOutPlusSvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/heart-love-romantic-svgrepo-com.svg -> src/HeartLoveRomanticSvgrepoCom.js
+[34mmodern-icons-library:build: [0massets/mp3-music-next-svgrepo-com.svg -> src/Mp3MusicNextSvgrepoCom.js
+[34mmodern-icons-library:build: [0m[36m
+[34mmodern-icons-library:build: [0m[1msrc/index.js[22m → [1mdist/index.esm.js[22m...[39m
+[34mmodern-icons-library:build: [0m┌────────────────────────────────────┐
+[34mmodern-icons-library:build: [0m│                                    │
+[34mmodern-icons-library:build: [0m│   [32m[1mDestination: [22m[39m[33mdist/index.esm.js[39m   │
+[34mmodern-icons-library:build: [0m│   [32m[1mBundle Size: [22m[39m [33m12.54 KB[39m           │
+[34mmodern-icons-library:build: [0m│   [32m[1mMinified Size: [22m[39m [33m9.87 KB[39m          │
+[34mmodern-icons-library:build: [0m│   [32m[1mGzipped Size: [22m[39m [33m2.77 KB[39m           │
+[34mmodern-icons-library:build: [0m│                                    │
+[34mmodern-icons-library:build: [0m└────────────────────────────────────┘
+[34mmodern-icons-library:build: [0m[32mcreated [1mdist/index.esm.js[22m in [1m1s[22m[39m
+[34mmodern-icons-library:build: [0minfo  - Linting and checking validity of types...
+[34mmodern-icons-library:build: [0minfo  - Creating an optimized production build...
+[34mmodern-icons-library:build: [0minfo  - Disabled SWC as replacement for Babel because of custom Babel configuration ".babelrc" https://nextjs.org/docs/messages/swc-disabled
+[34mmodern-icons-library:build: [0minfo  - Using external babel configuration from /Users/Oussama/Desktop/turboapp/apps/docs/.babelrc
+[34mmodern-icons-library:build: [0minfo  - Compiled successfully
+[34mmodern-icons-library:build: [0minfo  - Collecting page data...
+[34mmodern-icons-library:build: [0minfo  - Generating static pages (0/3)
+[34mmodern-icons-library:build: [0minfo  - Generating static pages (3/3)
+[34mmodern-icons-library:build: [0minfo  - Finalizing page optimization...
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0mPage                                       Size     First Load JS
+[34mmodern-icons-library:build: [0m┌ ○ /                                      255 B          66.9 kB
+[34mmodern-icons-library:build: [0m└ ○ /404                                   2.75 kB        69.4 kB
+[34mmodern-icons-library:build: [0m+ First Load JS shared by all              66.6 kB
+[34mmodern-icons-library:build: [0m  ├ chunks/framework-e4a67534aaf451e8.js   41.9 kB
+[34mmodern-icons-library:build: [0m  ├ chunks/main-bb331656bc88b373.js        22.6 kB
+[34mmodern-icons-library:build: [0m  ├ chunks/pages/_app-689ff06d06707c86.js  653 B
+[34mmodern-icons-library:build: [0m  └ chunks/webpack-070751847f2a5ea6.js     1.44 kB
+[34mmodern-icons-library:build: [0m
+[34mmodern-icons-library:build: [0m○  (Static)  automatically rendered as static HTML (uses no initial props)
+[34mmodern-icons-library:build: [0m
