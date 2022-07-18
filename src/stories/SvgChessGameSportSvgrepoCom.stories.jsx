@@ -1,5 +1,4 @@
 import React from 'react'
-
 import SvgChessGameSportSvgrepoCom from '../ChessGameSportSvgrepoCom'
 
 export default {
