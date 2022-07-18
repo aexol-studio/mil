@@ -37,5 +37,8 @@
     "rimraf": "^3.0.2",
     "rollup": "^2.75.7",
     "rollup-plugin-filesize": "^9.1.2"
+  },
+  "dependencies": {
+    "react": "^17.0.2"
   }
 }
