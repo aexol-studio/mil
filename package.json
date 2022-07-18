@@ -1,6 +1,6 @@
 {
   "name": "modern-icons-library",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "description": "Libarary for SVGs files",
   "private": false,
   "main": "index.js",
