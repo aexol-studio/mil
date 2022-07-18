@@ -1,9 +1,8 @@
 name: Build and Deploy
 on:
   push:
-    paths:
-      branches:
-        - master
+    branches:
+      - master
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
