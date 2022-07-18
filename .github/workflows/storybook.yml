@@ -15,7 +15,7 @@ jobs:
           npm install
           npm run build-storybook
       - name: Deploy 🚀
-        uses: mil/actions-gh-pages@v3
+        uses: aexol-studio/mil@v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master # The branch the action should deploy to.
