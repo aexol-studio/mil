@@ -1,6 +1,6 @@
 {
   "name": "lunchpro-main",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "LunchPro monorepo",
   "main": "index.js",
   "scripts": {
