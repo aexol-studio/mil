@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3.0.6
         with:
           persist-credentials: false
       - name: Install and Build 🔧
@@ -15,7 +15,7 @@ jobs:
           npm install
           npm run build-storybook
       - name: Deploy 🚀
-        uses: aexol-studio/mil@v3
+        uses: aexol-studio/mil@v3.0.6
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: master # The branch the action should deploy to.
