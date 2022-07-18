@@ -3,7 +3,7 @@ import SvgAppBinDeleteSvgrepoCom from '../src/AppBinDeleteSvgrepoCom'
 const Home = () => {
   return (
     <div>
-      MIL.
+      MIL....
       <SvgAppBinDeleteSvgrepoCom />
     </div>
   )
