@@ -8,7 +8,7 @@ const Container = styled.div`
   padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
-  background: linear-gradient(#f6f8fa, #f6f8fa 50%, rgba(246, 248, 250, 0));
+  background: transparent;
   z-index: 1;
   display: block;
 `
@@ -23,6 +23,7 @@ const Icon = styled.div`
   left: 16px;
   display: flex;
   align-items: center;
+  border: 0;
 `
 const Search = styled.input`
   width: 100%;

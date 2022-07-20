@@ -27,6 +27,14 @@ const A = styled.a`
   }
 `
 const Link = (props) => {
-  return <A>{props.children ? props.children : 'Get started'}</A>
+  return (
+    <A
+      href="https://github.com/aexol-studio/mil"
+      target="_blank"
+      className="inline-block m-0 py-3 px-6 text-base font-medium text-center no-underline text-white bg-[#0066ff] border-0 rounded-md appearance-none cursor-pointer"
+    >
+      {props.children ? props.children : 'Get started'}
+    </A>
+  )
 }
 export default Link
