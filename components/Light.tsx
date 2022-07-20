@@ -12,7 +12,11 @@ const Light = (props) => {
       onClick={OnClickHandle}
     >
       <div>
-        {props.mode ? <MdLightMode size={25} /> : <MdDarkMode size={25} />}
+        {props.mode ? (
+          <MdLightMode size={25} color="white" />
+        ) : (
+          <MdDarkMode size={25} />
+        )}
       </div>
     </button>
   )

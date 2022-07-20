@@ -12,48 +12,21 @@ const Container = styled.div`
   z-index: 1;
   display: block;
 `
-const UI = styled.div`
-  position: relative;
-  display: block;
-`
-const Icon = styled.div`
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 16px;
-  display: flex;
-  align-items: center;
-  border: 0;
-`
-const Search = styled.input`
-  width: 100%;
-  margin: 0;
-  padding: 16px;
-  padding-left: 52px;
-  font-size: inherit;
-  line-height: 1;
-  font-family: inherit;
-  color: inherit;
-  background-color: #fff;
-  box-shadow: 0 1px 3px 0 rgba(0 0 0 / 10%), 0 1px 2px 0 rgba(0 0 0 / 6%);
-  border: 0;
-  appearance: none;
-  outline: 0;
-  border-radius: 6px;
-`
+
 const Input = (props) => {
   return (
-    <Container>
-      <UI>
-        <Icon>
+    <div className="sticky top-0 py-6 px-4 bg-transparent z-10 block">
+      <div className="relative block">
+        <div className="absolute top-0 bottom-0 left-4 flex items-center border-0">
           <IoIosSearch />
-        </Icon>
-        <Search
+        </div>
+        <input
+          className="w-full m-0 pl-[52px] leading-none shadow border-0 appearance-none outline-0 rounded-md"
           type="search"
           placeholder={props.placeholder ? props.placeholder : 'Search icons'}
         />
-      </UI>
-    </Container>
+      </div>
+    </div>
   )
 }
 export default Input

@@ -20,7 +20,7 @@ const Home = () => {
             mode ? 'text-white' : 'text-black'
           } hover:underline decoration-1`}
         >
-          Feather
+          Modern-icons-library
         </a>
         <div className="flex justify-center items-center">
           <a
@@ -48,6 +48,44 @@ const Home = () => {
           </div>
           <div className="mr-5">
             <Button mode={mode}></Button>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between">
+        <div className="w-[80%]">
+          <Input />
+          <div className=""></div>
+        </div>
+
+        <div className="flex w-[20%] flex-col justify-center">
+          <div className="flex justify-between">
+            <h2
+              className={`${
+                mode ? 'text-white' : 'text-black'
+              } m-0 text-xl font-medium`}
+            >
+              Customize
+            </h2>
+            <button className={`${mode ? 'text-white' : 'text-black'}`}>
+              Reset
+            </button>
+          </div>
+          <div className="flex flex-col ">
+            <p className={`${mode ? 'text-white' : 'text-black'}`}>Size</p>
+            <input type="range" min="12" max="100" step="4" />
+          </div>
+          <div className="flex flex-col ">
+            <p className={`${mode ? 'text-white' : 'text-black'}`}>
+              Stroke width
+            </p>
+            <input type="range" min="0.5" max="3" step="0.5" />
+          </div>
+          <div className="flex flex-col ">
+            <p className={`${mode ? 'text-white' : 'text-black'}`}>Color</p>
+            <input
+              type="text"
+              className="m-0 border-2 px-3 bg-white border-[#d1d5da] rounded-md p-2"
+            />
           </div>
         </div>
       </div>
