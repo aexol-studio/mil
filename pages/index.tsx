@@ -3,8 +3,8 @@ import Button from '../components/Button'
 import Input from '../components/Input'
 import Light from '../components/Light'
 import Link from '../components/Link'
-import styled from 'styled-components'
-
+import List from '@/components/List'
+import Icon from '@/components/Icon'
 const Home = () => {
   const [mode, setMode] = useState(false)
   return (
@@ -53,11 +53,19 @@ const Home = () => {
       </div>
       <div className="flex justify-between">
         <div className="w-[80%]">
-          <Input />
-          <div className=""></div>
+          <Input mode={mode} />
+          <div className="flex flex-wrap">
+            {List.map((icon, index) => {
+              return (
+                <Icon key={index} title={icon.title}>
+                  {icon.icon}
+                </Icon>
+              )
+            })}
+          </div>
         </div>
 
-        <div className="flex w-[20%] flex-col justify-center">
+        <div className="flex w-[20%] flex-col ">
           <div className="flex justify-between">
             <h2
               className={`${
