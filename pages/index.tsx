@@ -52,16 +52,29 @@ const Home = () => {
         </div>
       </div>
       <div className="flex justify-between">
-        <div className="w-[80%]">
+        <div className="w-[79%] flex flex-col">
           <Input mode={mode} />
           <div className="flex flex-wrap">
             {List.map((icon, index) => {
               return (
-                <Icon key={index} title={icon.title}>
+                <Icon key={index} title={icon.title} svg={icon.svg}>
                   {icon.icon}
                 </Icon>
               )
             })}
+          </div>
+          <div className="py-6 px-4">
+            <footer className="py-4 border-t border-[#d1d5da]">
+              <a
+                className={`no-underline text-sm hover:underline ${
+                  mode ? 'text-white' : 'text-black'
+                }`}
+                target="_blank"
+                href="https://aexol.com/"
+              >
+                Made by @aexol
+              </a>
+            </footer>
           </div>
         </div>
 
