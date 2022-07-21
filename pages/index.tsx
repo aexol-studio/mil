@@ -5,8 +5,16 @@ import Light from '../components/Light'
 import Link from '../components/Link'
 import List from '@/components/List'
 import Icon from '@/components/Icon'
+import Footer from '@/components/Footer'
 const Home = () => {
   const [mode, setMode] = useState(false)
+  const [size, setSize] = useState(30)
+  const [strokeWidth, setStrokeWidth] = useState(2)
+  const Resetfcn = (event) => {
+    event.preventDefault()
+    setSize(30)
+    setStrokeWidth(2)
+  }
   return (
     <div
       className={`h-screen w-screen p-10 flex flex-col ${
@@ -51,31 +59,25 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-baseline">
         <div className="w-[79%] flex flex-col">
           <Input mode={mode} />
           <div className="flex flex-wrap">
             {List.map((icon, index) => {
               return (
-                <Icon key={index} title={icon.title} svg={icon.svg}>
+                <Icon
+                  key={index}
+                  title={icon.title}
+                  svg={icon.svg}
+                  fontSize={size}
+                  strokeWidth={strokeWidth}
+                >
                   {icon.icon}
                 </Icon>
               )
             })}
           </div>
-          <div className="py-6 px-4">
-            <footer className="py-4 border-t border-[#d1d5da]">
-              <a
-                className={`no-underline text-sm hover:underline ${
-                  mode ? 'text-white' : 'text-black'
-                }`}
-                target="_blank"
-                href="https://aexol.com/"
-              >
-                Made by @aexol
-              </a>
-            </footer>
-          </div>
+          <Footer mode={mode} />
         </div>
 
         <div className="flex w-[20%] flex-col ">
@@ -87,25 +89,58 @@ const Home = () => {
             >
               Customize
             </h2>
-            <button className={`${mode ? 'text-white' : 'text-black'}`}>
+            <button
+              className={`${mode ? 'text-white' : 'text-black'}`}
+              onClick={Resetfcn}
+            >
               Reset
             </button>
           </div>
           <div className="flex flex-col ">
             <p className={`${mode ? 'text-white' : 'text-black'}`}>Size</p>
-            <input type="range" min="12" max="100" step="4" />
+            <div className="flex justify-between">
+              <input
+                type="range"
+                min="12"
+                max="88"
+                step="4"
+                value={size}
+                onChange={(event) => setSize(+event.target.value)}
+                className="w-[80%]"
+              />
+              <p className={`${mode ? 'text-white' : 'text-black'} text-sm`}>
+                {size} px
+              </p>
+            </div>
           </div>
           <div className="flex flex-col ">
-            <p className={`${mode ? 'text-white' : 'text-black'}`}>
+            <p className={`${mode ? 'text-white' : 'text-black'} `}>
               Stroke width
             </p>
-            <input type="range" min="0.5" max="3" step="0.5" />
+            <div className="flex justify-between">
+              <input
+                type="range"
+                min="0.5"
+                max="3"
+                step="0.5"
+                onChange={(event) => setStrokeWidth(+event.target.value)}
+                className="w-[80%]"
+                value={strokeWidth}
+              />
+              <p className={`${mode ? 'text-white' : 'text-black'} text-sm`}>
+                {strokeWidth} px
+              </p>
+            </div>
           </div>
           <div className="flex flex-col ">
             <p className={`${mode ? 'text-white' : 'text-black'}`}>Color</p>
             <input
               type="text"
-              className="m-0 border-2 px-3 bg-white border-[#d1d5da] rounded-md p-2"
+              className={`m-0 border-2 px-3 outline-0  rounded-md p-2 ${
+                mode
+                  ? 'bg-[#2f363d] text-white border-[#444d56]'
+                  : 'bg-white border-[#d1d5da]'
+              }`}
             />
           </div>
         </div>

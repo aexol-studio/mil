@@ -7,7 +7,13 @@ const Icon = (props) => {
       href={props.svg}
     >
       <div className="w-full h-full pb-4 flex flex-col items-center cursor-pointer bg-white rounded-md shadow-md outline-0 ">
-        <div className="flex-auto flex items-center justify-center">
+        <div
+          className={`flex-auto flex items-center justify-center`}
+          style={{
+            fontSize: `${props.fontSize}px`,
+            strokeWidth: `${props.strokeWidth}`,
+          }}
+        >
           {props.children}
         </div>
         <span className="flex-initial text-sm px-3.5 text-center break-words">
