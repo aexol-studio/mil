@@ -12,6 +12,7 @@ const Icon = (props) => {
           style={{
             fontSize: `${props.fontSize}px`,
             strokeWidth: `${props.strokeWidth}`,
+            color: `${props.color ? props.color : ''}`,
           }}
         >
           {props.children}

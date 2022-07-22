@@ -21,6 +21,7 @@ const Input = (props) => {
           <IoIosSearch color={`${props.mode ? 'white' : 'black'}`} />
         </div>
         <input
+          onChange={(event) => props.setFilterText(event.target.value)}
           className={`w-full m-0 pl-[52px] leading-none shadow border-0 appearance-none outline-0 rounded-md h-[40px] ${
             props.mode ? 'bg-[#2f363d] text-white' : 'bg-white'
           }`}

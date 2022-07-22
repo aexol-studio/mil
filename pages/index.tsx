@@ -10,6 +10,24 @@ const Home = () => {
   const [mode, setMode] = useState(false)
   const [size, setSize] = useState(30)
   const [strokeWidth, setStrokeWidth] = useState(2)
+  const [ColorIcon, setColorIcon] = useState('')
+  const [FilterText, setFilterText] = useState('')
+  const nameList = List.filter((icon) => {
+    return icon.title.toLowerCase().indexOf(FilterText.toLowerCase()) >= 0
+  }).map((icon, index) => {
+    return (
+      <Icon
+        key={index}
+        title={icon.title}
+        svg={icon.svg}
+        fontSize={size}
+        strokeWidth={strokeWidth}
+        color={ColorIcon}
+      >
+        {icon.icon}
+      </Icon>
+    )
+  })
   const Resetfcn = (event) => {
     event.preventDefault()
     setSize(30)
@@ -61,22 +79,8 @@ const Home = () => {
       </div>
       <div className="flex justify-between items-baseline">
         <div className="w-[79%] flex flex-col">
-          <Input mode={mode} />
-          <div className="flex flex-wrap">
-            {List.map((icon, index) => {
-              return (
-                <Icon
-                  key={index}
-                  title={icon.title}
-                  svg={icon.svg}
-                  fontSize={size}
-                  strokeWidth={strokeWidth}
-                >
-                  {icon.icon}
-                </Icon>
-              )
-            })}
-          </div>
+          <Input mode={mode} setFilterText={setFilterText} value={FilterText} />
+          <div className="flex flex-wrap">{nameList}</div>
           <Footer mode={mode} />
         </div>
 
@@ -135,6 +139,8 @@ const Home = () => {
           <div className="flex flex-col ">
             <p className={`${mode ? 'text-white' : 'text-black'}`}>Color</p>
             <input
+              onChange={(event) => setColorIcon(event.target.value)}
+              value={ColorIcon}
               type="text"
               className={`m-0 border-2 px-3 outline-0  rounded-md p-2 ${
                 mode
