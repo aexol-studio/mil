@@ -6,7 +6,11 @@ const Icon = (props) => {
       download={`${props.title}.svg`}
       href={props.svg}
     >
-      <div className="w-full h-full pb-4 flex flex-col items-center cursor-pointer bg-white rounded-md shadow-md outline-0 ">
+      <div
+        className={`w-full h-full pb-4 flex flex-col items-center cursor-pointer  rounded-md shadow-md outline-0 ${
+          props.mode ? 'bg-[#2f363d]' : 'bg-white'
+        }`}
+      >
         <div
           className={`flex-auto flex items-center justify-center`}
           style={{
@@ -17,7 +21,11 @@ const Icon = (props) => {
         >
           {props.children}
         </div>
-        <span className="flex-initial text-sm px-3.5 text-center break-words">
+        <span
+          className={`flex-initial text-sm px-3.5 text-center break-words ${
+            props.mode ? 'text-white' : 'text-black'
+          }`}
+        >
           {props.title}
         </span>
       </div>

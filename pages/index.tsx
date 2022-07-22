@@ -23,6 +23,7 @@ const Home = () => {
         fontSize={size}
         strokeWidth={strokeWidth}
         color={ColorIcon}
+        mode={mode}
       >
         {icon.icon}
       </Icon>
@@ -35,7 +36,7 @@ const Home = () => {
   }
   return (
     <div
-      className={`h-screen w-screen p-10 flex flex-col ${
+      className={`h-auto w-screen p-10 flex flex-col ${
         mode ? 'bg-[#24292e]' : 'bg-[#f6f8fa]'
       }`}
     >
