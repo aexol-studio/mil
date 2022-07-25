@@ -8,7 +8,8 @@
     "test": "npm run test -ws --if-present",
     "web": "npm run dev -w apps/web",
     "storybook": "npm run storybook -w apps/mil",
-    "svgr": "npm run svgr -w apps/mil"
+    "svgr": "npm run svgr -w apps/mil",
+    "dev": "npm run dev -ws --if-present"
   },
   "repository": {
     "type": "git",
