@@ -69,9 +69,9 @@ const Home = () => {
       </div>
       <div className="flex flex-col text-center mt-24 justify-center items-center mb-20">
         <h1
-          className={`mt-0 mb-6  font-normal ${
-            mode ? 'text-white' : 'text-black'
-          } ${width < 400 ? 'text-base' : 'text-2xl'}`}
+          className={`mt-0 mb-6   ${mode ? 'text-white' : 'text-black'} ${
+            width < 400 ? 'text-base' : 'text-3xl font-medium'
+          }`}
         >
           Simply beautiful open source icons
         </h1>
@@ -111,7 +111,8 @@ const Home = () => {
               Customize
             </h2>
             <button
-              className={`${mode ? 'text-white' : 'text-black'}`}
+              className={` inline-block m-0 font-medium text-center no-underline border-0 rounded-md appearance-none cursor-pointer bg-transparent text-sm shadow py-1 px-2
+                ${mode ? 'text-white' : 'text-black'}`}
               onClick={Resetfcn}
             >
               Reset
@@ -119,7 +120,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col m-5">
             <p className={`${mode ? 'text-white' : 'text-black'}`}>Size</p>
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               <input
                 type="range"
                 min="12"
@@ -133,7 +134,7 @@ const Home = () => {
               />
               <p
                 className={`${mode ? 'text-white' : 'text-black'}   ${
-                  width < 600 ? 'text-xs font-thin' : 'text-sm'
+                  width < 670 ? 'hidden' : 'text-sm'
                 }`}
               >
                 {size} px
@@ -158,7 +159,7 @@ const Home = () => {
               />
               <p
                 className={`${mode ? 'text-white' : 'text-black'}  ${
-                  width < 600 ? 'text-xs font-thin' : 'text-sm'
+                  width < 670 ? 'hidden' : 'text-sm'
                 }`}
               >
                 {strokeWidth} px
