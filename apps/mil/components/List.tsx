@@ -46,10 +46,8 @@ import SvgChevronsLeft from '../src/ChevronsLeft'
 import SvgChevronsRight from '../src/ChevronsRight'
 import SvgChevronsUp from '../src/ChevronsUp'
 import SvgChrome from '../src/Chrome'
-import { svgStyleState } from '../containers/svgStyleContainer'
-
+import alignjustify from '../assets/align-justify.svg'
 export const returnList = (props) => {
-  const { isMenuLoading } = svgStyleState()
   return [
     {
       icon: (
@@ -60,7 +58,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'AlignJustify',
-      svg: '../assets/align-justify.svg',
+      svg: 'assets/align-justify.svg',
     },
     {
       icon: (
@@ -71,7 +69,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'AlignLeft',
-      svg: '../assets/align-left.svg',
+      svg: 'assets/align-left.svg',
     },
     {
       icon: (
@@ -82,7 +80,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'AlignRight',
-      svg: '../assets/align-right.svg',
+      svg: 'assets/align-right.svg',
     },
     {
       icon: (
@@ -93,7 +91,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Anchor',
-      svg: '../assets/anchor.svg',
+      svg: 'assets/anchor.svg',
     },
     {
       icon: (
@@ -104,7 +102,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Aperture',
-      svg: '../assets/aperture.svg',
+      svg: 'assets/aperture.svg',
     },
     {
       icon: (
@@ -115,7 +113,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Archive',
-      svg: '../assets/archive.svg',
+      svg: 'assets/archive.svg',
     },
     {
       icon: (
@@ -126,7 +124,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowDown',
-      svg: '../assets/arrow-down.svg',
+      svg: 'assets/arrow-down.svg',
     },
     {
       icon: (
@@ -137,7 +135,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowDownRight',
-      svg: '../assets/arrow-down-right.svg',
+      svg: 'assets/arrow-down-right.svg',
     },
     {
       icon: (
@@ -148,7 +146,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowLeft',
-      svg: '../assets/arrow-left.svg',
+      svg: 'assets/arrow-left.svg',
     },
     {
       icon: (
@@ -159,7 +157,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowLeftCircle',
-      svg: '../assets/arrow-left-circle.svg',
+      svg: 'assets/arrow-left-circle.svg',
     },
     {
       icon: (
@@ -170,7 +168,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowRight',
-      svg: '../assets/arrow-right.svg',
+      svg: 'assets/arrow-right.svg',
     },
     {
       icon: (
@@ -181,7 +179,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowRightCircle',
-      svg: '../assets/arrow-right-circle.svg',
+      svg: 'assets/arrow-right-circle.svg',
     },
     {
       icon: (
@@ -192,7 +190,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowUp',
-      svg: '../assets/arrow-up.svg',
+      svg: 'assets/arrow-up.svg',
     },
     {
       icon: (
@@ -203,7 +201,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowUpCircle',
-      svg: '../assets/arrow-up-circle.svg',
+      svg: 'assets/arrow-up-circle.svg',
     },
     {
       icon: (
@@ -214,7 +212,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowUpLeft',
-      svg: '../assets/arrow-up-left.svg',
+      svg: 'assets/arrow-up-left.svg',
     },
     {
       icon: (
@@ -225,7 +223,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ArrowUpRight',
-      svg: '../assets/arrow-up-right.svg',
+      svg: 'assets/arrow-up-right.svg',
     },
     {
       icon: (
@@ -236,7 +234,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'AtSign',
-      svg: '../assets/at-sign.svg',
+      svg: 'assets/at-sign.svg',
     },
     {
       icon: (
@@ -247,7 +245,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Award',
-      svg: '../assets/award.svg',
+      svg: 'assets/award.svg',
     },
     {
       icon: (
@@ -258,7 +256,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'BarChart',
-      svg: '../assets/bar-chart.svg',
+      svg: 'assets/bar-chart.svg',
     },
     {
       icon: (
@@ -269,7 +267,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'BarChart2',
-      svg: '../assets/bar-chart-2.svg',
+      svg: 'assets/bar-chart-2.svg',
     },
     {
       icon: (
@@ -280,7 +278,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Battery',
-      svg: '../assets/battery.svg',
+      svg: 'assets/battery.svg',
     },
     {
       icon: (
@@ -291,7 +289,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'BatteryCharging',
-      svg: '../assets/battery-charging.svg',
+      svg: 'assets/battery-charging.svg',
     },
     {
       icon: (
@@ -302,7 +300,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Bell',
-      svg: '../assets/bell.svg',
+      svg: 'assets/bell.svg',
     },
     {
       icon: (
@@ -313,7 +311,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'BellOff',
-      svg: '../assets/',
+      svg: 'assets/bell-off.svg',
     },
     {
       icon: (
@@ -324,7 +322,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Bluetooth',
-      svg: '../assets/bluetooth.svg',
+      svg: 'assets/bluetooth.svg',
     },
     {
       icon: (
@@ -335,7 +333,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Bold',
-      svg: '../assets/',
+      svg: 'assets/bold.svg',
     },
     {
       icon: (
@@ -346,7 +344,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Book',
-      svg: '../assets/',
+      svg: 'assets/book.svg',
     },
     {
       icon: (
@@ -357,7 +355,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'BookOpen',
-      svg: '../assets/',
+      svg: 'assets/book-open.svg',
     },
     {
       icon: (
@@ -368,7 +366,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Bookmark',
-      svg: '../assets/',
+      svg: 'assets/bookmark.svg',
     },
     {
       icon: (
@@ -379,7 +377,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Box',
-      svg: '../assets/',
+      svg: 'assets/box.svg',
     },
     {
       icon: (
@@ -390,7 +388,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Briefcase',
-      svg: '../assets/',
+      svg: 'assets/briefcase.svg',
     },
     {
       icon: (
@@ -401,7 +399,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Calendar',
-      svg: '../assets/',
+      svg: 'assets/calendar.svg',
     },
     {
       icon: (
@@ -412,7 +410,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Camera',
-      svg: '../assets/',
+      svg: 'assets/camera.svg',
     },
     {
       icon: (
@@ -423,7 +421,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'CameraOff',
-      svg: '../assets/',
+      svg: 'assets/camera-off.svg',
     },
     {
       icon: (
@@ -434,7 +432,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Cast',
-      svg: '../assets/',
+      svg: 'assets/cast.svg',
     },
 
     {
@@ -446,7 +444,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Check',
-      svg: '../assets/',
+      svg: 'assets/check.svg',
     },
     {
       icon: (
@@ -457,7 +455,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'CheckCircle',
-      svg: '../assets/',
+      svg: 'assets/check-circle.svg',
     },
     {
       icon: (
@@ -468,7 +466,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'CheckSquare',
-      svg: '../assets/',
+      svg: 'assets/check-square.svg',
     },
     {
       icon: (
@@ -479,7 +477,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronDown',
-      svg: '../assets/',
+      svg: 'assets/chevron-down.svg',
     },
     {
       icon: (
@@ -490,7 +488,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronLeft',
-      svg: '../assets/',
+      svg: 'assets/chevron-left.svg',
     },
     {
       icon: (
@@ -501,7 +499,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronRight',
-      svg: '../assets/',
+      svg: 'assets/chevron-right.svg',
     },
     {
       icon: (
@@ -512,7 +510,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronUp',
-      svg: '../assets/',
+      svg: 'assets/chevron-up.svg',
     },
     {
       icon: (
@@ -523,7 +521,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronsDown',
-      svg: '../assets/',
+      svg: 'assets/chevrons-down.svg',
     },
     {
       icon: (
@@ -534,7 +532,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronsLeft',
-      svg: '../assets/',
+      svg: 'assets/chevrons-left.svg',
     },
     {
       icon: (
@@ -545,7 +543,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronsRight',
-      svg: '../assets/',
+      svg: 'assets/chevrons-right.svg',
     },
     {
       icon: (
@@ -556,7 +554,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'ChevronsUp',
-      svg: '../assets/',
+      svg: 'assets/chevrons-up.svg',
     },
     {
       icon: (
@@ -567,7 +565,7 @@ export const returnList = (props) => {
         />
       ),
       title: 'Chrome',
-      svg: '../assets/',
+      svg: 'assets/chrome.svg',
     },
   ]
 }
