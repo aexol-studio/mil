@@ -30,7 +30,6 @@ const Home = () => {
           title={icon.title}
           svg={icon.svg}
           fontSize={size}
-          strokeWidth={strokeWidth}
           color={ColorIcon}
           mode={mode}
         >

@@ -15,7 +15,6 @@ const Icon = (props) => {
           className={`flex-auto flex items-center justify-center`}
           style={{
             fontSize: `${props.fontSize}px`,
-            strokeWidth: `${props.strokeWidth}`,
             color: `${props.color ? props.color : ''}`,
           }}
         >
