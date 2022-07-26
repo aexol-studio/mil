@@ -3,7 +3,7 @@ import Button from '../components/Button'
 import Input from '../components/Input'
 import Light from '../components/Light'
 import Link from '../components/Link'
-import List from '../components/List'
+import { returnList } from '../components/List'
 import Icon from '../components/Icon'
 import Footer from '../components/Footer'
 import { useWindowSize } from '../components/useWindowSize'
@@ -18,23 +18,26 @@ const Home = () => {
   const ColorHandle = (event) => {
     setColorIcon(event.target.value)
   }
-  const nameList = List.filter((icon) => {
-    return icon.title.toLowerCase().indexOf(FilterText.toLowerCase()) >= 0
-  }).map((icon, index) => {
-    return (
-      <Icon
-        key={index}
-        title={icon.title}
-        svg={icon.svg}
-        fontSize={size}
-        strokeWidth={strokeWidth}
-        color={ColorIcon}
-        mode={mode}
-      >
-        {icon.icon}
-      </Icon>
-    )
-  })
+
+  const nameList = returnList(strokeWidth)
+    .filter((icon) => {
+      return icon.title.toLowerCase().indexOf(FilterText.toLowerCase()) >= 0
+    })
+    .map((icon, index) => {
+      return (
+        <Icon
+          key={index}
+          title={icon.title}
+          svg={icon.svg}
+          fontSize={size}
+          strokeWidth={strokeWidth}
+          color={ColorIcon}
+          mode={mode}
+        >
+          {icon.icon}
+        </Icon>
+      )
+    })
   const Resetfcn = (event) => {
     event.preventDefault()
     setSize(30)
